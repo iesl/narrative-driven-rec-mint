@@ -1,0 +1,17 @@
+{
+    "model_name": "recinparsce",
+    "base-pt-layer": "microsoft/mpnet-base",
+    "train_suffix": "davinci-10k-recinpars",
+    "criterion": "CrossEntropyLoss",
+    "train_users": 9605,
+    "dev_size": 800,
+    "num_epochs": 2,
+    "batch_size": 12,
+    "neg_per_pos": 4,
+    "update_rule": "adam",
+    "learning_rate": 2e-5,
+    "num_warmup_steps": 1000,
+    "lr_decay_method": "warmuplin",
+    "es_check_every": 1500,
+    "fine_tune": true
+}

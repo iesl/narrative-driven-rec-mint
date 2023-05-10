@@ -1,0 +1,18 @@
+{
+    "model_name": "recinpars",
+    "base-pt-layer": "microsoft/mpnet-base",
+    "train_suffix": "curie-43k",
+    "train_size": 40279,
+    "dev_size": 3503,
+    "num_epochs": 5,
+    "batch_size": 5,
+    "accumulated_batch_size": 30,
+    "update_rule": "adam",
+    "learning_rate": 2e-5,
+    "num_warmup_steps": 1000,
+    "decay_lr_every": 1,
+    "lr_decay_method": "warmuplin",
+    "decay_lr_by": 0.95,
+    "es_check_every": 5000,
+    "fine_tune": true
+}
